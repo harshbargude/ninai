@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+        .card {
+            display: inline-block;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h2>OAuth Login Successful ✅</h2>
+
+    <h3 th:text="'Welcome ' + ${name}"></h3>
+    <p th:text="${email}"></p>
+
+    <a th:href="@{/logout}">Logout</a>
+</div>
+
+</body>
+</html>
