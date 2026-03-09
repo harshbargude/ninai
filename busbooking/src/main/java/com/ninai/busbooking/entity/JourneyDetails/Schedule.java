@@ -1,11 +1,7 @@
 package com.ninai.busbooking.entity.JourneyDetails;
 
-<<<<<<< HEAD:busbooking/busbooking/src/main/java/com/ninai/busbooking/entity/Schedule.java
-=======
 import com.ninai.busbooking.entity.Owner.Conductor;
 import com.ninai.busbooking.entity.Owner.Driver;
-
->>>>>>> 98bc638387339bc2b221e618667383648d666d3d:busbooking/busbooking/src/main/java/com/ninai/busbooking/entity/JourneyDetails/Schedule.java
 import com.ninai.busbooking.entity.User_folder.User;
 import com.ninai.busbooking.enums.Direction;
 import com.ninai.busbooking.enums.ScheduleStatus;
@@ -37,6 +33,109 @@ public class Schedule {
 
     private BigDecimal baseFare;
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Bus getBus() {
+        return bus;
+    }
+
+    public void setBus(Bus bus) {
+        this.bus = bus;
+    }
+
+    public LocalDate getTravelDate() {
+        return travelDate;
+    }
+
+    public void setTravelDate(LocalDate travelDate) {
+        this.travelDate = travelDate;
+    }
+
+    public LocalTime getDepartureTime() {
+        return departureTime;
+    }
+
+    public void setDepartureTime(LocalTime departureTime) {
+        this.departureTime = departureTime;
+    }
+
+    public BigDecimal getBaseFare() {
+        return baseFare;
+    }
+
+    public void setBaseFare(BigDecimal baseFare) {
+        this.baseFare = baseFare;
+    }
+
+    public ScheduleStatus getStatus() {
+        return status;
+    }
+
+    public void setStatus(ScheduleStatus status) {
+        this.status = status;
+    }
+
+    public Route getRoute() {
+        return route;
+    }
+
+    public void setRoute(Route route) {
+        this.route = route;
+    }
+
+    public Driver getDriver() {
+        return driver;
+    }
+
+    public void setDriver(Driver driver) {
+        this.driver = driver;
+    }
+
+    public Conductor getConductor() {
+        return conductor;
+    }
+
+    public void setConductor(Conductor conductor) {
+        this.conductor = conductor;
+    }
+
+    public Double getRate() {
+        return rate;
+    }
+
+    public void setRate(Double rate) {
+        this.rate = rate;
+    }
+
+    public Direction getDirection() {
+        return direction;
+    }
+
+    public void setDirection(Direction direction) {
+        this.direction = direction;
+    }
+
+    public User getCreatedBy() {
+        return createdBy;
+    }
+
+    public void setCreatedBy(User createdBy) {
+        this.createdBy = createdBy;
+    }
+
+    public LocalDateTime getPublishedAt() {
+        return publishedAt;
+    }
+
+    public void setPublishedAt(LocalDateTime publishedAt) {
+        this.publishedAt = publishedAt;
+    }
 
     @Enumerated(EnumType.STRING)
     private ScheduleStatus status;
